@@ -1,0 +1,9 @@
+interface types {
+    use jabratech:common/types.{counterparty};
+
+    record counterparty-response{
+        code: s16,
+        message: string,
+        data: list<counterparty>
+    }
+}

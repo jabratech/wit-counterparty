@@ -1,0 +1,7 @@
+interface counterparty-handler {
+  use jabratech:common/types.{response-error};
+  use types.{counterparty-response};
+
+  get:  func(is-equal:bool,id: option<list<s32>>, ticker: option<list<string>>, shortname: option<list<string>>, name: option<list<string>>) -> result<counterparty-response, response-error>;
+  
+}

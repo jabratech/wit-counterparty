@@ -1,0 +1,5 @@
+package jabratech:counterparty-common;
+
+world counterparty {
+    export counterparty-handler;
+}
